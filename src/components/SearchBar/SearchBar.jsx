@@ -15,7 +15,7 @@ export function SearchBar({ onSubmit }) {
   const handleSubmit = e => {
     e.preventDefault();
     if (inputName.trim() === '') {
-      return () => alert('Searchign form is empty! Please input some text.');
+      return alert('Searchign form is empty! Please input some text.');
     }
     onSubmit(inputName);
     setInputName('');
